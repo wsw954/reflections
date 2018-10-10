@@ -1,0 +1,86 @@
+wsw4@LAPTOP-IBVR9S2C MINGW64 ~
+$ git clone https://github.com/udacity/pappu-pakia.git
+Cloning into 'pappu-pakia'...
+remote: Enumerating objects: 1221, done.
+remote: Total 1221 (delta 0), reused 0 (delta 0), pack-reused 1221
+Receiving objects: 100% (1221/1221), 3.02 MiB | 6.92 MiB/s, done.
+Resolving deltas: 100% (775/775), done.
+
+
+The command $ git clone https://github.com/udacity/pappu-pakia.git
+Copies the full commit history of the file into the wsw4 directory
+
+git diff 708bcce690e5faa5739bd471507c102ea16b77f7 fa4c6bade4970c282b3870ad16f1bde8164663a9
+Differences between two files
+pwd
+/c/Users/wsw4
+
+Shows current directory
+
+
+$ cd pappu-pakia
+wsw4@LAPTOP-IBVR9S2C MINGW64 ~/pappu-pakia (master)
+Changes directory to /c/Users/wsw4/pappu-pakia
+Note the prompt (master) means when the directory is first changed, the initial commit loaded is the latest commit
+
+
+wsw4@LAPTOP-IBVR9S2C MINGW64 ~/pappu-pakia ((fa4c6ba...))
+$ cd
+Changes directory up one level to parent
+
+wsw4@LAPTOP-IBVR9S2C MINGW64 ~
+$ cd version-control
+
+wsw4@LAPTOP-IBVR9S2C MINGW64 ~/version-control
+
+
+
+
+
+
+git log
+Shows log of all commits
+
+
+$ git checkout 708bcce690e5faa5739bd471507c102ea16b77f7
+Note: checking out '708bcce690e5faa5739bd471507c102ea16b77f7'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 708bcce pressing down arrow wont cause scroll down anymore
+
+wsw4@LAPTOP-IBVR9S2C MINGW64 ~/pappu-pakia ((708bcce...))
+
+Changed current commit to the one listed in the command, ((708bcce...)) so now the folder pappu-pakia in wsw4 is the commit 708bcce…
+Note the prompt now list 708bcce…. Instead of (master) 
+
+Additionally, if you should checkout back to the latest commit, before running a new git log command.
+
+
+
+
+Hit Q once you’ve scrolled down to the end of the log listing to restart the command prompt
+
+
+
+$ ls -a
+./  ../  .git/  css/  fonts/  img/  index.htm  js/  kong.htm  README.md  sound/
+
+ls -a shows all the hidden files in the directory
+
+
+
+
+
+$ git init 
+Initializes an empty Git repository in current directory. It will have 0 commits.
+Git repositories and directories
+Each Git repository is tied to a specific directory - the directory where you ran git init. Only files from that directory (and subdirectories inside that directory) will be contained in that repository, and you can have different repositories in different directories.
+Note: it's often the case that a Git repository in some directory will only contain, or track, some of the files in that directory, rather than all of them. You'll see how this works later this lesson
